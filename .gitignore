@@ -1,0 +1,5 @@
+# Project exclude paths
+/cmake-build-debug/
+/cmake-build-release/
+/learn_3dzavr
+/engine_log.txt
