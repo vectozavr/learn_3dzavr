@@ -18,7 +18,7 @@ RigidBody::RigidBody(ObjectNameTag nameTag, const std::string &filename, const V
 RigidBody::RigidBody(const Mesh &mesh, bool useSimpleBox) : Mesh(mesh), _hitBox(mesh, useSimpleBox) {
 }
 
-void RigidBody::regenerateHitBox(bool useSimpleBox) {
+void RigidBody::recalculateHitBox(bool useSimpleBox) {
     _hitBox = HitBox(*this, useSimpleBox);
 }
 
@@ -120,7 +120,7 @@ NextSimplex RigidBody::_tetrahedronCase(const Simplex &points) {
 std::pair<bool, Simplex> RigidBody::checkGJKCollision(std::shared_ptr<RigidBody> obj) {
     // This is implementation of GJK algorithm for collision detection.
     // It builds a simplex (a simplest shape that can select point in space) around
-    // zero for Minkowski Difference. Collision happend when zero point is inside.
+    // zero for Minkowski Difference. Collision happened when zero point is inside.
 
     // Get initial support point in any direction
     Vec3D support = _support(obj, Vec3D{1, 0, 0});
