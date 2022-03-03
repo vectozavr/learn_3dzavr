@@ -55,7 +55,7 @@ public:
     [[nodiscard]] static double elapsedTimerMilliseconds(const std::string& timerName);
     [[nodiscard]] static double elapsedTimerSeconds(const std::string& timerName);
 
-    [[nodiscard]] static std::map<std::string, Timer> const & timers() { return _instance->_timers; }
+    [[nodiscard]] static std::map<std::string, Timer> const & timers();
 };
 
 #endif //INC_3DZAVR_TIME_H

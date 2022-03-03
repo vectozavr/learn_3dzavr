@@ -131,19 +131,19 @@ std::vector<std::shared_ptr<Mesh>> ResourceManager::loadObjects(const std::strin
         s << line;
 
         char junk;
-        if (line[0] == 'o') {
+        if (line[0] == 'm') {
             // TODO: implement (lesson 3)
         }
         if (line[0] == 'v') {
             // TODO: implement (lesson 3)
         }
-        if (line[0] == 'g') {
-            // TODO: implement (lesson 3)
-        }
         if (line[0] == 'f') {
             // TODO: implement (lesson 3)
         }
-        if (line[0] == 'm') {
+        if (line[0] == 'g') {
+            // TODO: implement (lesson 3)
+        }
+        if (line[0] == 'o') {
             // TODO: implement (lesson 3)
         }
     }

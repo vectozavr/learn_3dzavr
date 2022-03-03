@@ -95,6 +95,20 @@ void Screen::drawTriangle(const Triangle &triangle) {
                                triangle.color())
             };
 
+    sf::Vertex lines[4] =
+            {
+                    sf::Vertex(sf::Vector2f(triangle[0].x(), triangle[0].y()), sf::Color(0, 0, 0, 255)),
+                    sf::Vertex(sf::Vector2f(triangle[1].x(), triangle[1].y()), sf::Color(0, 0, 0, 255)),
+                    sf::Vertex(sf::Vector2f(triangle[2].x(), triangle[2].y()), sf::Color(0, 0, 0, 255)),
+                    sf::Vertex(sf::Vector2f(triangle[0].x(), triangle[0].y()), sf::Color(0, 0, 0, 255))
+            };
+
+    // Uncomment this line to show boundaries of triangles
+    // Раскомментируйте эту строку для отображения границ треугольников
+    //           |
+    //          \/
+    //_window->draw(lines, 4, sf::LineStrip);
+
     _window->draw(tris, 3, sf::Triangles);
 }
 

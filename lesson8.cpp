@@ -26,6 +26,8 @@ public:
         Timeline::addAnimation<ARotate>(cube, Vec3D(M_PI/2, M_PI, 3*M_PI/2), 5);
         Timeline::addAnimation<AWait>();
         Timeline::addAnimation<AScale>(cube, Vec3D(3, 3, 3), 5);
+
+        setGlEnable(true);
     }
 };
 

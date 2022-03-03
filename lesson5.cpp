@@ -20,6 +20,8 @@ public:
 
         // apply gravity
         sphere->setAcceleration(Vec3D(0, -10, 0));
+
+        setGlEnable(true);
     }
 };
 

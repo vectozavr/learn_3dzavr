@@ -20,6 +20,7 @@ public:
         cube2->translate(Vec3D(-1.3,-1.3,3.5));
 
         screen->setMouseCursorVisible(false);
+        setGlEnable(true);
     }
 
     void update() override {

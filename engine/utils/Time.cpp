@@ -106,6 +106,12 @@ double Time::elapsedTimerSeconds(const std::string &timerName) {
     return 0;
 }
 
+std::map<std::string, Timer> const &Time::timers() {
+    if(_instance != nullptr)
+        return _instance->_timers;
+    else
+        return std::map<std::string, Timer>();
+}
 
 void Time::free() {
     delete _instance;

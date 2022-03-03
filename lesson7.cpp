@@ -23,6 +23,7 @@ public:
         cube1->setCollision(true);
 
         screen->setMouseCursorVisible(false);
+        setGlEnable(true);
     }
 
     void update() override {

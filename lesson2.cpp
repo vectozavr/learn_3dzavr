@@ -31,6 +31,7 @@ int main() {
      * You should work with the following files:
      *
      * engine/Object.cpp
+     * engine/Matrix4x4.cpp
      * engine/Camera.cpp
      *
      * If you do it right, you will observe rotating cube
@@ -40,6 +41,7 @@ int main() {
      * На этом уроке вам необходимо работать со следующими файлами:
      *
      * engine/Object.cpp
+     * engine/Matrix4x4.cpp
      * engine/Camera.cpp
      *
      * Если вы всё сделали правильно, то на экране появится вращающийся куб
