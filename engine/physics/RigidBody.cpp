@@ -18,10 +18,6 @@ RigidBody::RigidBody(ObjectNameTag nameTag, const std::string &filename, const V
 RigidBody::RigidBody(const Mesh &mesh, bool useSimpleBox) : Mesh(mesh), _hitBox(mesh, useSimpleBox) {
 }
 
-void RigidBody::recalculateHitBox(bool useSimpleBox) {
-    _hitBox = HitBox(*this, useSimpleBox);
-}
-
 void RigidBody::updatePhysicsState() {
     // TODO: implement (lesson 5)
 }
