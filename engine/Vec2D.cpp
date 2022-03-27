@@ -3,6 +3,7 @@
 //
 
 #include <cmath>
+#include <cassert>
 
 #include "Vec2D.h"
 #include "Consts.h"

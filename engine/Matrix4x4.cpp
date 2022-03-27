@@ -3,6 +3,7 @@
 //
 
 #include <cmath>
+#include <cassert>
 
 #include "Matrix4x4.h"
 #include "Consts.h"

@@ -4,6 +4,7 @@
 
 #include <cmath>
 #include <stdexcept>
+#include <cassert>
 
 #include "Vec4D.h"
 #include "Consts.h"
