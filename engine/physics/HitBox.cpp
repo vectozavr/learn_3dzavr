@@ -4,6 +4,7 @@
 
 #include <set>
 #include <cmath>
+#include <limits>
 
 #include "HitBox.h"
 #include "../Consts.h"

@@ -2,6 +2,8 @@
 // Created by Neirokan on 30.04.2020
 //
 
+#include <limits>
+
 #include "ReliableMsg.h"
 #include "../utils/Time.h"
 #include "../Consts.h"

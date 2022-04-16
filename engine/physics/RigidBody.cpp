@@ -4,6 +4,7 @@
 
 #include <cmath>
 #include <utility>
+#include <limits>
 
 #include "RigidBody.h"
 #include "../utils/Log.h"
