@@ -15,9 +15,11 @@
 #include "../Mesh.h"
 #include "HitBox.h"
 
-struct CollisionPoint final {
+class RigidBody;
+struct CollisionInfo final {
     const Vec3D normal;
     const double depth;
+    std::shared_ptr<RigidBody> object;
 };
 
 struct FaceNormal final {
@@ -67,8 +69,8 @@ public:
     RigidBody(ObjectNameTag nameTag, const std::string &filename, const Vec3D &scale = Vec3D{1, 1, 1}, bool useSimpleBox = true);
 
     [[nodiscard]] std::pair<bool, Simplex> checkGJKCollision(std::shared_ptr<RigidBody> obj);
-    [[nodiscard]] CollisionPoint EPA(const Simplex &simplex, std::shared_ptr<RigidBody> obj);
-    void solveCollision(const CollisionPoint &collision);
+    [[nodiscard]] CollisionInfo EPA(const Simplex &simplex, std::shared_ptr<RigidBody> obj);
+    void solveCollision(const CollisionInfo &collision);
 
     [[nodiscard]] Vec3D collisionNormal() const { return _collisionNormal; }
     [[nodiscard]] bool hasCollision() const { return _hasCollision; }
@@ -90,11 +92,8 @@ public:
     [[nodiscard]] Vec3D velocity() const { return _velocity; }
     [[nodiscard]] Vec3D acceleration() const { return _acceleration; }
 
-    [[nodiscard]] const std::function<void(const ObjectNameTag &, std::shared_ptr<RigidBody>)> &
-    collisionCallBack() const { return _collisionCallBack; }
+    virtual void collisionCallBack(const CollisionInfo &collision) {}
 
-    void setCollisionCallBack(const std::function<void(const ObjectNameTag &tag,
-                                                       std::shared_ptr<RigidBody>)> &f) { _collisionCallBack = f; }
 
     ~RigidBody() override = default;
 };

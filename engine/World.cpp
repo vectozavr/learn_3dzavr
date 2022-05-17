@@ -113,14 +113,10 @@ void World::checkCollision(const ObjectNameTag &tag) {
 
             if (gjk.first) {
                 if (obj->isCollider()) {
-                    CollisionPoint epa = _objects[tag]->EPA(gjk.second, obj);
+                    CollisionInfo epa = _objects[tag]->EPA(gjk.second, obj);
                     _objects[tag]->solveCollision(epa);
                 }
-                if (_objects[tag]->collisionCallBack() != nullptr) {
-                    _objects[tag]->collisionCallBack()(name, obj);
-                }
             }
-
         }
     }
 }

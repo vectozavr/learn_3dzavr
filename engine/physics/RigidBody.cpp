@@ -138,7 +138,7 @@ std::pair<bool, Simplex> RigidBody::checkGJKCollision(std::shared_ptr<RigidBody>
     return std::make_pair(false, points);
 }
 
-CollisionPoint RigidBody::EPA(const Simplex &simplex, std::shared_ptr<RigidBody> obj) {
+CollisionInfo RigidBody::EPA(const Simplex &simplex, std::shared_ptr<RigidBody> obj) {
     // This is implementation of EPA algorithm for solving collision.
     // It uses a simplex from GJK around and expand it to the border.
     // The goal is to calculate the nearest normal and the intersection depth.
@@ -167,10 +167,10 @@ CollisionPoint RigidBody::EPA(const Simplex &simplex, std::shared_ptr<RigidBody>
 
     _collisionNormal = minNormal;
     if (std::abs(minDistance - std::numeric_limits<double>::max()) < Consts::EPS) {
-        return CollisionPoint{minNormal, 0};
+        return CollisionInfo{minNormal, 0};
     }
 
-    return CollisionPoint{minNormal, minDistance + Consts::EPA_EPS};
+    return CollisionInfo{minNormal, minDistance + Consts::EPA_EPS, obj};
 }
 
 std::pair<std::vector<FaceNormal>, size_t>
@@ -222,6 +222,8 @@ RigidBody::_addIfUniqueEdge(const std::vector<std::pair<size_t, size_t>> &edges,
     return newEdges;
 }
 
-void RigidBody::solveCollision(const CollisionPoint &collision) {
+void RigidBody::solveCollision(const CollisionInfo &collision) {
     // TODO: implement (lesson 7)
+
+    collisionCallBack(collision);
 }
