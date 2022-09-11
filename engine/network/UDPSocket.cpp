@@ -150,10 +150,8 @@ MsgType UDPSocket::receive(sf::Packet &packet, sf::Uint16 &senderId) {
         for (tmp = Consts::NETWORK_MAX_CLIENTS; tmp >= 1; tmp--) {
             if (!_connections.count(tmp)) {
                 senderId = tmp;
-            } else {
-                if (_connections.at(tmp).same(ip, port)) {
-                    return MsgType::Error;
-                }
+            } else if (_connections.at(tmp).same(ip, port)) {
+                return MsgType::Error;
             }
         }
         _connections.insert({senderId, UDPConnection(senderId, ip, port)});
