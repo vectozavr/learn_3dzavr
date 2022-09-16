@@ -3,7 +3,7 @@
 //
 
 #include "engine/Engine.h"
-#include "engine/ObjectController.h"
+#include "engine/utils/ObjectController.h"
 
 class Lesson4 final : public Engine {
 private:
@@ -35,9 +35,9 @@ int main() {
      * TODO: implement camera translation, rotation and clipping planes
      * You should work with the following files:
      *
-     * engine/Matrix4x4.cpp
+     * engine/math/Matrix4x4.cpp
      * engine/Camera.cpp
-     * engine/Plane.cpp
+     * engine/math/Plane.cpp
      *
      * If you do it right, you will be possible to control camera and see mountains
      *
@@ -45,9 +45,9 @@ int main() {
      * TODO: реализуйте вращение, перемещение камеры и процедуру клиппинга
      * На этом уроке вам необходимо работать со следующими файлами:
      *
-     * engine/Matrix4x4.cpp
+     * engine/math/Matrix4x4.cpp
      * engine/Camera.cpp
-     * engine/Plane.cpp
+     * engine/math/Plane.cpp
      *
      * Если вы всё сделали правильно, то вы сможете управлять камерой и смотреть на горы
      */

@@ -7,7 +7,7 @@
 #include <cassert>
 
 #include "Vec3D.h"
-#include "Consts.h"
+#include "../Consts.h"
 
 Vec3D::Vec3D(const Vec3D &vec) {
     _arr_point[0] = vec.x();

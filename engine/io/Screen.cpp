@@ -8,9 +8,9 @@
 #include <SFML/OpenGL.hpp>
 
 #include "Screen.h"
-#include "utils/Time.h"
-#include "utils/Log.h"
-#include "ResourceManager.h"
+#include "../utils/Time.h"
+#include "../utils/Log.h"
+#include "../utils/ResourceManager.h"
 
 void Screen::open(int screenWidth, int screenHeight, const std::string &name, bool verticalSync, sf::Color background,
                   sf::Uint32 style) {

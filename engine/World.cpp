@@ -7,8 +7,8 @@
 
 #include "World.h"
 #include "utils/Log.h"
-#include "Plane.h"
-#include "ResourceManager.h"
+#include "math/Plane.h"
+#include "utils/ResourceManager.h"
 
 using namespace std;
 

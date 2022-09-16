@@ -30,7 +30,7 @@ int main() {
      * TODO: implement loading .obj files, simple lighting and painter algorithm
      * You should work with the following files:
      *
-     * engine/ResourceManager.cpp
+     * engine/utils/ResourceManager.cpp
      * engine/Camera.cpp
      *
      * If you do it right, you will observe rotating monkey
@@ -39,7 +39,7 @@ int main() {
      * TODO: реализуйте загрузку .obj файлов, простое освещение и алгоритм художника
      * На этом уроке вам необходимо работать со следующими файлами:
      *
-     * engine/ResourceManager.cpp
+     * engine/utils/ResourceManager.cpp
      * engine/Camera.cpp
      *
      * Если вы всё сделали правильно, то на экране должна появится вращающаяся обезьянка

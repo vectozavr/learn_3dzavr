@@ -3,7 +3,7 @@
 //
 
 #include "engine/Engine.h"
-#include "engine/ObjectController.h"
+#include "engine/utils/ObjectController.h"
 
 class Lesson6 final : public Engine {
 private:
