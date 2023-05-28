@@ -47,9 +47,9 @@ int main() {
      * TODO: реализуйте анимации перемещения, вращения и масштабирования
      * На этом уроке вам необходимо работать со следующим файлом:
      *
-     * engine/animation/ATranslate.cpp
-     * engine/animation/ARotate.cpp
-     * engine/animation/AScale.cpp
+     * engine/animation/ATranslate.h
+     * engine/animation/ARotate.h
+     * engine/animation/AScale.h
      *
      * Если вы всё сделали правильно, то увидите последовательность из 3 анимаций (перемещение, вращение и масштабирование)
      */

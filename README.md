@@ -16,13 +16,13 @@
 2) Установите [SFML](https://www.sfml-dev.org/download.php) в вашу систему (<b>Версия компилятора должна совпадать на 100%</b>).
 
 
-2) Выберете подходящий редактор кода. Например, [CLion](https://www.jetbrains.com/clion/) или [Visual Studio](https://visualstudio.microsoft.com/ru/).
+3) Выберете подходящий редактор кода. Например, [CLion](https://www.jetbrains.com/clion/) или [Visual Studio](https://visualstudio.microsoft.com/ru/).
      
 
-3) Клинируйте этот репозиторий.
+4) Клонируйте этот репозиторий.
     
 
-4) Соберите проект, добавив в цель сборки один из файлов lesson(n).cpp
+5) Соберите проект, добавив в цель сборки один из файлов lesson(n).cpp
 
 Если у вас возникли какие-либо трудности в работе с репозиторием или вы нашли ошибку, то лучше всего будет создать [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
 
