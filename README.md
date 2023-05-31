@@ -2,6 +2,8 @@
 
 Сам курс: [vectozavr.ru](https://vectozavr.ru)
 
+[Инструкция по сборке и запуску](https://vectozavr.ru/lesson?id_article=0)
+
 ## Задания
 
 Задания находятся в файлах lesson(n).cpp
