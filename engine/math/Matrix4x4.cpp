@@ -201,27 +201,27 @@ void Matrix4x4::test() {
     Vec4D k(0, 0,1);
 
     // rotation X:
-    Vec4D i_rx = Matrix4x4::RotationX(M_PI/2)*i;
-    Vec4D j_rx = Matrix4x4::RotationX(M_PI/2)*j;
-    Vec4D k_rx = Matrix4x4::RotationX(M_PI/2)*k;
+    Vec4D i_rx = Matrix4x4::RotationX(Consts::PI/2)*i;
+    Vec4D j_rx = Matrix4x4::RotationX(Consts::PI/2)*j;
+    Vec4D k_rx = Matrix4x4::RotationX(Consts::PI/2)*k;
 
     assert(i_rx == i);
     assert(j_rx == k);
     assert(k_rx == -j);
 
     // rotation Y:
-    Vec4D i_ry = Matrix4x4::RotationY(M_PI/2)*i;
-    Vec4D j_ry = Matrix4x4::RotationY(M_PI/2)*j;
-    Vec4D k_ry = Matrix4x4::RotationY(M_PI/2)*k;
+    Vec4D i_ry = Matrix4x4::RotationY(Consts::PI/2)*i;
+    Vec4D j_ry = Matrix4x4::RotationY(Consts::PI/2)*j;
+    Vec4D k_ry = Matrix4x4::RotationY(Consts::PI/2)*k;
 
     assert(i_ry == -k);
     assert(j_ry == j);
     assert(k_ry == i);
 
     // rotation Z:
-    Vec4D i_rz = Matrix4x4::RotationZ(M_PI/2)*i;
-    Vec4D j_rz = Matrix4x4::RotationZ(M_PI/2)*j;
-    Vec4D k_rz = Matrix4x4::RotationZ(M_PI/2)*k;
+    Vec4D i_rz = Matrix4x4::RotationZ(Consts::PI/2)*i;
+    Vec4D j_rz = Matrix4x4::RotationZ(Consts::PI/2)*j;
+    Vec4D k_rz = Matrix4x4::RotationZ(Consts::PI/2)*k;
 
     assert(i_rz == j);
     assert(j_rz == -i);
