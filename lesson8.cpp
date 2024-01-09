@@ -2,9 +2,9 @@
 // Created by Иван Ильин on 24.02.2022.
 //
 
-#include "engine/Engine.h"
-#include "engine/animation/Timeline.h"
-#include "engine/animation/Animations.h"
+#include <Engine.h>
+#include <animation/Timeline.h>
+#include <animation/Animations.h>
 
 class Lesson8 final : public Engine {
 public:

@@ -7,8 +7,8 @@
 #include <sstream>
 #include <fstream>
 
-#include "ResourceManager.h"
-#include "Log.h"
+#include <utils/ResourceManager.h>
+#include <utils/Log.h>
 
 ResourceManager *ResourceManager::_instance = nullptr;
 

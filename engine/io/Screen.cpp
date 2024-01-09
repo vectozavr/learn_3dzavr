@@ -7,14 +7,14 @@
 
 #include <SFML/OpenGL.hpp>
 
+#include <utils/ResourceManager.h>
+#include <utils/Time.h>
+#include <utils/Log.h>
+#include <io/Screen.h>
+
 #if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
 #define popen _popen
 #endif
-
-#include "Screen.h"
-#include "../utils/Time.h"
-#include "../utils/Log.h"
-#include "../utils/ResourceManager.h"
 
 void Screen::open(int screenWidth, int screenHeight, const std::string &name, bool verticalSync, sf::Color background,
                   sf::Uint32 style) {

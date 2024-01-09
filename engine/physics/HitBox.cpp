@@ -6,8 +6,8 @@
 #include <cmath>
 #include <limits>
 
-#include "HitBox.h"
-#include "../Consts.h"
+#include <physics/HitBox.h>
+#include <Consts.h>
 
 bool HitBox::Vec3DLess::operator()(const Vec3D& lhs, const Vec3D& rhs) const noexcept {
     if (fabs(lhs.x() - rhs.x()) >= Consts::EPS)

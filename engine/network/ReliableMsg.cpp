@@ -4,9 +4,9 @@
 
 #include <limits>
 
-#include "ReliableMsg.h"
-#include "../utils/Time.h"
-#include "../Consts.h"
+#include <network/ReliableMsg.h>
+#include <utils/Time.h>
+#include <Consts.h>
 
 ReliableMsg::ReliableMsg(sf::Packet &packet, sf::IpAddress address, sf::Uint16 port) : packet(packet), address(address),
                                                                                        port(port),

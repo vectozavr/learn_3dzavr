@@ -8,8 +8,8 @@
 #include <memory>
 #include <limits>
 
-#include "ReliableMsg.h"
-#include "UDPSocket.h"
+#include <network/ReliableMsg.h>
+#include <network/UDPSocket.h>
 
 class ClientUDP {
 protected:

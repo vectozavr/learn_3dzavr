@@ -6,10 +6,10 @@
 #include <utility>
 #include <limits>
 
-#include "RigidBody.h"
-#include "../utils/Log.h"
-#include "../utils/Time.h"
-#include "../Consts.h"
+#include <physics/RigidBody.h>
+#include <utils/Time.h>
+#include <utils/Log.h>
+#include <Consts.h>
 
 RigidBody::RigidBody(ObjectNameTag nameTag, const std::string &filename, const Vec3D &scale, bool useSimpleBox) : Mesh(std::move(nameTag),
                                                                                                     filename, scale),

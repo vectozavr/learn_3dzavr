@@ -4,11 +4,11 @@
 
 #include <iostream>
 
-#include "Engine.h"
-#include "utils/Time.h"
-#include "utils/ResourceManager.h"
-#include "animation/Timeline.h"
-#include "io/SoundController.h"
+#include <Engine.h>
+#include <utils/Time.h>
+#include <utils/ResourceManager.h>
+#include <animation/Timeline.h>
+#include <io/SoundController.h>
 
 Engine::Engine() {
     Time::init();

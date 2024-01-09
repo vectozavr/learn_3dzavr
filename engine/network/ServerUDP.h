@@ -9,10 +9,10 @@
 #include <limits>
 #include <set>
 
-#include "../World.h"
-#include "../Camera.h"
-#include "ReliableMsg.h"
-#include "UDPSocket.h"
+#include <network/ReliableMsg.h>
+#include <network/UDPSocket.h>
+#include <World.h>
+#include <Camera.h>
 
 class ServerUDP {
 protected:

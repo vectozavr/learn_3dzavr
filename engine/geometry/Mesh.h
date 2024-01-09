@@ -10,8 +10,8 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "Triangle.h"
-#include "Object.h"
+#include <Object.h>
+#include <geometry/Triangle.h>
 
 class Mesh : public Object {
 private:

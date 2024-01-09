@@ -5,7 +5,7 @@
 #ifndef LEARN_3DZAVR_SERVER_H
 #define LEARN_3DZAVR_SERVER_H
 
-#include "../engine/network/ServerUDP.h"
+#include <network/ServerUDP.h>
 
 class Server : public ServerUDP {
 private:

@@ -2,8 +2,8 @@
 // Created by Иван Ильин on 24.02.2022.
 //
 
-#include "engine/Engine.h"
-#include "engine/utils/ObjectController.h"
+#include <Engine.h>
+#include <utils/ObjectController.h>
 
 class Lesson7 final : public Engine {
 private:

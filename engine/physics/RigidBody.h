@@ -10,10 +10,10 @@
 #include <memory>
 #include <functional>
 
-#include "../Triangle.h"
-#include "Simplex.h"
-#include "../Mesh.h"
-#include "HitBox.h"
+#include "geometry/Triangle.h"
+#include "geometry/Mesh.h"
+#include "physics/Simplex.h"
+#include "physics/HitBox.h"
 
 class RigidBody;
 struct CollisionInfo final {

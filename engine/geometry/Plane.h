@@ -5,8 +5,7 @@
 #ifndef ENGINE_PLANE_H
 #define ENGINE_PLANE_H
 
-#include "Vec4D.h"
-#include "../Triangle.h"
+#include <geometry/Triangle.h>
 
 class Plane final {
 private:

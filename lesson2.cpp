@@ -2,7 +2,7 @@
 // Created by Иван Ильин on 24.02.2022.
 //
 
-#include "engine/Engine.h"
+#include <Engine.h>
 
 class Lesson2 final : public Engine {
 private:
@@ -31,7 +31,7 @@ int main() {
      * You should work with the following files:
      *
      * engine/Object.cpp
-     * engine/math/Matrix4x4.cpp
+     * engine/linalg/Matrix4x4.cpp
      * engine/Camera.cpp
      *
      * If you do it right, you will observe rotating cube
@@ -41,7 +41,7 @@ int main() {
      * На этом уроке вам необходимо работать со следующими файлами:
      *
      * engine/Object.cpp
-     * engine/math/Matrix4x4.cpp
+     * engine/linalg/Matrix4x4.cpp
      * engine/Camera.cpp
      *
      * Если вы всё сделали правильно, то на экране появится вращающийся куб

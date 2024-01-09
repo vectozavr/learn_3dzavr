@@ -4,9 +4,9 @@
 
 #include <utility>
 
-#include "Mesh.h"
-#include "utils/ResourceManager.h"
-#include "io/Screen.h"
+#include <geometry/Mesh.h>
+#include <utils/ResourceManager.h>
+#include <io/Screen.h>
 
 using namespace std;
 

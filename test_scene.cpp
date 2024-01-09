@@ -3,7 +3,6 @@
 //
 #include <SFML/Graphics.hpp>
 
-
 int main() {
     // Download SFML: https://www.sfml-dev.org/download.php
 

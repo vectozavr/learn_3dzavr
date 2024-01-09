@@ -5,8 +5,8 @@
 #include <cmath>
 #include <cassert>
 
-#include "Vec2D.h"
-#include "../Consts.h"
+#include <linalg/Vec2D.h>
+#include <Consts.h>
 
 Vec2D::Vec2D(const Vec2D &vec) {
     _arr_point[0] = vec.x();

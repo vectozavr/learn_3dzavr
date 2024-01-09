@@ -2,8 +2,8 @@
 // Created by Иван Ильин on 06.09.2022.
 //
 
-#include "../engine/Engine.h"
-#include "../engine/utils/ObjectController.h"
+#include <Engine.h>
+#include <utils/ObjectController.h>
 
 #include "Server.h"
 #include "Client.h"

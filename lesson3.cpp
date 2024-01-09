@@ -2,7 +2,7 @@
 // Created by Иван Ильин on 24.02.2022.
 //
 
-#include "engine/Engine.h"
+#include <Engine.h>
 
 class Lesson3 final : public Engine {
 private:

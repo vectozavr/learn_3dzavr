@@ -2,9 +2,7 @@
 // Created by Иван Ильин on 19.09.2021.
 //
 
-#include "Mouse.h"
-#include "../utils/Time.h"
-#include "../Consts.h"
+#include <io/Mouse.h>
 
 Vec2D Mouse::getMousePosition() const {
     sf::Vector2<int> pos = sf::Mouse::getPosition(*_screen->renderWindow());

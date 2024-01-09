@@ -5,8 +5,8 @@
 #ifndef LEARN_3DZAVR_CLIENT_H
 #define LEARN_3DZAVR_CLIENT_H
 
-#include "../engine/network/ClientUDP.h"
-#include "../engine/physics/RigidBody.h"
+#include <network/ClientUDP.h>
+#include <physics/RigidBody.h>
 
 class Client : public ClientUDP {
 private:

@@ -5,8 +5,8 @@
 #include <cmath>
 #include <cassert>
 
-#include "Matrix4x4.h"
-#include "../Consts.h"
+#include <linalg/Matrix4x4.h>
+#include <Consts.h>
 
 Matrix4x4 Matrix4x4::operator*(const Matrix4x4 &matrix4X4) const {
     Matrix4x4 result = Matrix4x4::Zero();
